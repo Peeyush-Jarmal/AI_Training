@@ -81,13 +81,100 @@ Do not mix multiple new ideas at once.
 
 ---
 
-## Project 7: Local LLM (Optional)
-**New Concept:** Open-source LLMs
+## Project 7: Advanced Prompt Engineering
+**New Concept:** Few-shot, chain-of-thought, role-playing prompts
 
 **What to Build:**
-- Run a local LLM
-- Compare with OpenAI models
-- Understand cost vs performance tradeoffs
+- ML Interview Coach that asks technical questions
+- Evaluates your answers with structured feedback
+- Demonstrates different prompt techniques
+
+**What You Learn:**
+- Few-shot learning patterns
+- Chain-of-thought reasoning
+- Role-based prompting
+- 80% of LLM value comes from better prompts (no coding needed)
+
+**Key Insight:** Master prompting before jumping to complex frameworks
+
+---
+
+## Project 8: Function Calling & Tool Use
+**New Concept:** LLM calls external functions (calculator, search, your DB)
+
+**What to Build:**
+- ML Experiment Tracker
+- LLM queries your past experiments
+- Runs statistical analysis on results
+- Integrates with databases and APIs
+
+**What You Learn:**
+- Function calling patterns
+- Tool integration
+- Database connectivity
+- Foundation for agent systems
+
+**Why Important:** Powers agents (essential for your GSCOPE GenAI platform)
+
+---
+
+## Project 9: Local LLM Deployment
+**New Concept:** Open-source LLMs & privacy
+
+**What to Build:**
+- Same birds RAG system but offline/private
+- Run Llama3/Mistral on your Mac using Ollama + LM Studio
+- Compare performance with OpenAI models
+
+**What You Learn:**
+- Local model deployment
+- Cost vs performance tradeoffs
+- Privacy considerations
+- Hardware requirements (Your Mac M1 handles 7B models fine)
+
+**Why Critical:** Cost/privacy control (Walmart data stays local)
+
+---
+
+## Project 10: Agent Systems & Orchestration
+**New Concept:** LangChain/LangGraph agents that chain multiple LLMs/tools
+
+**What to Build:**
+- Code Review Agent
+- Reads your Python code
+- Suggests improvements using multiple analysis steps
+- Deploy with Streamlit web UI + FastAPI backend
+
+**What You Learn:**
+- Agent orchestration
+- Multi-step reasoning
+- Web deployment patterns
+- Production considerations
+
+**Deployment Stack:**
+- Frontend: Streamlit
+- Backend: FastAPI
+- Agent Framework: LangGraph
+
+---
+
+## Learning Path Summary
+
+### **Phase 1: Fundamentals (Projects 1-3)**
+- Basic LLM interaction
+- Context handling & chunking
+- Embeddings & semantic search
+
+### **Phase 2: Advanced Techniques (Projects 4-6)**
+- Multi-document systems
+- Conversation memory
+- Structured outputs
+
+### **Phase 3: Production Skills (Projects 7-10)**
+- Advanced prompting
+- Function calling
+- Local deployment
+- Agent systems
 
 ---
 
@@ -106,13 +193,32 @@ genai-learning/
 │   ├── chunker.py
 │   ├── qa_engine.py
 │   └── sample_docs/
+├── project7_prompt_engineering/
+│   ├── interview_coach.py
+│   ├── prompt_templates/
+│   └── evaluation_rubrics/
+├── project8_function_calling/
+│   ├── experiment_tracker.py
+│   ├── tools/
+│   └── database/
+├── project9_local_llm/
+│   ├── ollama_setup.md
+│   ├── model_comparison.py
+│   └── performance_tests/
+└── project10_agents/
+    ├── code_review_agent/
+    ├── streamlit_ui/
+    └── fastapi_backend/
 ```
 
 ---
 
 ## Final Advice
+- **Follow the sequence** - each project builds on previous concepts
 - Avoid jumping to agents too early
 - Build fundamentals yourself before using frameworks
 - Focus on understanding *why* things work
+- **Test locally first** before deploying to production
 
-This roadmap is designed to build **real GenAI intuition**, not just demos.
+This roadmap is designed to build **real GenAI intuition** and prepare you for **enterprise-grade GenAI platforms** like your GSCOPE project.
+

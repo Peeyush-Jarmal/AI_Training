@@ -1,0 +1,45 @@
+Install the project dependencies into a virtual environment
+--> It's like a sandbox environment
+
+This created an environment -> Namespace
+python3 -m venv ~/openai-env 
+
+Activate the environment
+source ~/openai-env/bin/activate
+
+After Activating this env
+pip3 install openai
+
+pip3 list  -> shows all the list of installed packages.
+
+IMP
+    To deactivate the virtual environment
+    Simply enter : deactivate
+
+    Now do pip3 list
+    the list will be only of the globally installed packages
+
+
+Next step
+Create .env file/
+This file will have your project related env parameters.
+
+load_dotenv() 
+Automatically finds .env in your current working directory
+
+Now
+1 - activate your virtual environment
+2 - load your environment config.
+
+
+How to know if environment is activated
+The (openai-env) prefix appears automatically when you run source ~/openai-env/bin/activate.
+(openai-env) pjarma1@m-n6hkny0qgq AI_Training % 
+
+Inorder to read the .env file need to install 
+pip3 install python-dotenv
+
+
+Requirements.txt
+Include all the dependencies of the project.
+

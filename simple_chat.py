@@ -1,3 +1,11 @@
+
+# ✅ LLM APIs
+# ✅ System vs user prompts
+# ✅ Hallucination control
+# ✅ Context grounding
+# ✅ Token usage basics
+# ✅ Python integration
+
 import os;
 #from dotenv import load_dotenv;
 from openai import OpenAI ;

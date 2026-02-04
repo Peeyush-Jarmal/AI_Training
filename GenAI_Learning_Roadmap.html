@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GenAI Learning Roadmap</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 40px auto;
+            line-height: 1.6;
+            color: #222;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 15px;
+            overflow-x: auto;
+        }
+        hr {
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+<pre># GenAI Learning Roadmap (Beginner to Intermediate)
+
+## What I’ve Already Built
+- Python project using OpenAI API
+- Read a text file (birds data)
+- Q&A based only on provided file
+- Guardrails to prevent hallucinations
+
+### Concepts Covered
+- LLM APIs
+- System vs User prompts
+- Context grounding
+- Token basics
+- Hallucination control
+
+---
+
+## Learning Principle
+**Learn one new GenAI concept per project.**  
+Do not mix multiple new ideas at once.
+
+---
+
+## Project 2: Chunking & Long Context Handling
+**New Concept:** Context window limits
+
+**What to Build:**
+- Support large documents
+- Split text into chunks
+- Send only relevant chunks to LLM
+
+**What You Learn:**
+- Token limits
+- Chunk size tradeoffs
+- Why full-document prompts don’t scale
+
+---
+
+## Project 3: Embeddings & Semantic Search (RAG Lite)
+**New Concept:** Embeddings
+
+**What to Build:**
+- Generate embeddings for chunks
+- Perform similarity search
+- Send best chunk to LLM
+
+**What You Learn:**
+- Semantic search
+- Cosine similarity (conceptually)
+- Foundation of RAG systems
+
+---
+
+## Project 4: Multi-Document Knowledge Base
+**New Concept:** Knowledge aggregation
+
+**What to Build:**
+- Multiple document support
+- Automatic document selection
+- Source-aware answers
+
+---
+
+## Project 5: Conversation Memory
+**New Concept:** State & memory
+
+**What to Build:**
+- Maintain conversation history
+- Support follow-up questions
+- Manage context growth
+
+---
+
+## Project 6: Structured Outputs & Reliability
+**New Concept:** Output control
+
+**What to Build:**
+- Force JSON responses
+- Validate model output
+- Handle failures safely
+
+---
+
+## Project 7: Local LLM (Optional)
+**New Concept:** Open-source LLMs
+
+**What to Build:**
+- Run a local LLM
+- Compare with OpenAI models
+- Understand cost vs performance tradeoffs
+
+---
+
+## Recommended Next Step
+👉 **Project 2: Chunking & Long Context Handling**
+
+This is the most natural and valuable next step after your first project.
+
+---
+
+## Suggested Folder Structure
+```
+genai-learning/
+├── project1_birds_qa/
+├── project2_chunking/
+│   ├── chunker.py
+│   ├── qa_engine.py
+│   └── sample_docs/
+```
+
+---
+
+## Final Advice
+- Avoid jumping to agents too early
+- Build fundamentals yourself before using frameworks
+- Focus on understanding *why* things work
+
+This roadmap is designed to build **real GenAI intuition**, not just demos.
+</pre>
+</body>
+</html>

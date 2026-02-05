@@ -15,7 +15,7 @@ print("OPENAI_API_KEY =", os.getenv("OPENAI_API_KEY"))
 
 
 
-user_input = input("Enter Your Prompt: ");
+user_input = input("Enter Your Prompt: ")
 with open("birds.txt", "r", encoding="utf-8") as file:
     content = file.read()
 
@@ -23,9 +23,9 @@ with open("birds.txt", "r", encoding="utf-8") as file:
 ##
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"));
-response = client.chat.completions.create(
+response = client.responses.create(
   model="gpt-5-nano",
-  messages=[
+  input=[
       {
           "role": "system",
           "content": (
@@ -42,4 +42,4 @@ response = client.chat.completions.create(
 
   ]
 )
-print(response.choices[0].message.content);
+print(response.output_text)

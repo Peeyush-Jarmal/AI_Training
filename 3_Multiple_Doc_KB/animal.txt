@@ -1,0 +1,13 @@
+Animals are living organisms that belong to the biological kingdom Animalia. 
+They are multicellular, eukaryotic organisms that typically consume organic material, 
+breathe oxygen, and are capable of movement at some stage of their life.
+
+Animals are broadly classified into vertebrates and invertebrates. 
+Vertebrates include mammals, birds, reptiles, amphibians, and fish, all of which have a backbone.
+Invertebrates, such as insects, worms, and mollusks, do not have a backbone.
+
+Mammals are warm-blooded animals that usually have hair or fur and produce milk to feed their young.
+Examples of mammals include humans, elephants, whales, dogs, and bats.
+
+Animals play a crucial role in ecosystems. 
+They help maintain ecological balance through activities such as pollination, seed dispersal, and predation.

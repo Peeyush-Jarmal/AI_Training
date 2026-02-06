@@ -20,7 +20,7 @@ userInput = input('Ask me about birds:')
 text = read_file("birds_5000_words.txt");
 chunks = chunk_text(text,200,15);
 #print(len(text));
-#print(len(chunks));
+print(len(chunks));
 embedding_model = SentenceTransformer('all-MiniLM-L6-v2');
 dataEmbeddings = generate_embeddings(chunks,embedding_model);
 queryEmbeddings =  embedding_model.encode(userInput);

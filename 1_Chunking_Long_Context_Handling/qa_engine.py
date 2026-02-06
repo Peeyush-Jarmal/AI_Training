@@ -4,9 +4,9 @@ from openai import OpenAI
 import os 
 
 text = read_file("birds_5000_words.txt")
-print(len(text))
+#print(len(text))
 chunks = chunk_text(text)
-print(len(chunks))
+#print(len(chunks))
 
 question = input("Ask a question: ")
 
@@ -24,5 +24,4 @@ def ask_llm(prompt):
     return response.output_text
 
 prompt = f"Answer the question based on the context below:\n\nContext: {context}\n\nQuestion: {question}\n\nIf the answer is not explicitly present in the context, say: 'I cannot answer this question based on the provided document.' Do not use outside knowledge or make assumptions."
-
-#print(ask_llm(prompt))
+print(ask_llm(prompt))
